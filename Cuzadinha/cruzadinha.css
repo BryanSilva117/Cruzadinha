@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-left: 55vh;
+    height: 70vh;
+    width: 80vh;
+    background-color: black;
+    
+}
+
+
+.caixas {
+
+    margin-left: 0.2vh;
+    width: 3vh;
+    height: 3vh;
+}
