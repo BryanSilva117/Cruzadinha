@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 10vh;
-    margin-left: 55vh;
+    margin-left: 63vh;
     height: 70vh;
     width: 85vh;
     background-color: teal
@@ -23,6 +23,16 @@ body {
     border: none;
 }
 
+.holder {
+    background-color: rgb(17, 17, 17);
+}
+
 .inv {
     background-color: teal;
+}
+
+.container button {
+    width: 15vh;
+    margin-left: 30vh;
+    margin-top: 5vh;
 }
