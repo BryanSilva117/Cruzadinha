@@ -340,11 +340,11 @@
             <input id="input_none" maxlength="1" class="caixas inv" disabled>
             <input id="input_none" maxlength="1" class="caixas inv" disabled>
             <input id="input_none" maxlength="1" class="caixas" placeholder="18" disabled>
-            <input id="dez8c1" maxlength="1" class="caixas">
+            <input id="c" maxlength="1" class="caixas">
             <input id="oitoa14" maxlength="1" class="caixas">
-            <input id="dez8c3" maxlength="1" class="caixas">
-            <input id="dez8h4" maxlength="1" class="caixas">
-            <input id="dez8e5" maxlength="1" class="caixas inv" disabled>
+            <input id="c" maxlength="1" class="caixas">
+            <input id="h" maxlength="1" class="caixas">
+            <input id="e" maxlength="1" class="caixas inv" disabled>
             <input id="input_none" maxlength="1" class="caixas inv" disabled>
             <input id="input_none" maxlength="1" class="caixas inv" disabled>
             <input id="input_none" maxlength="1" class="caixas inv" disabled>
@@ -380,6 +380,68 @@
 
 <script>
     function verificarEntrada() {
+
+
+        // pergunta 3
+
+        var r3r1 = tresr1.value.replaceAll(" ", "").toLowerCase()
+        var r1 = document.getElementById('tresr1')
+        var r3e2 = trese2.value.replaceAll(" ", "").toLowerCase()
+        var e2 = document.getElementById('trese2')
+        var r3g3 = tresg3.value.replaceAll(" ", "").toLowerCase()
+        var g3 = document.getElementById('tresg3')
+        var r3i4 = tresi4.value.replaceAll(" ", "").toLowerCase()
+        var i4 = document.getElementById('tresi4')
+        var r3s5 = tress5.value.replaceAll(" ", "").toLowerCase()
+        var s5 = document.getElementById('tress5')
+        var r3t6 = trest6.value.replaceAll(" ", "").toLowerCase()
+        var t6 = document.getElementById('trest6')
+        var r3r7 = tresr7.value.replaceAll(" ", "").toLowerCase()
+        var r7 = document.getElementById('tresr7')
+        var r3d8 = tresd8.value.replaceAll(" ", "").toLowerCase()
+        var d8 = document.getElementById('tresd8')
+        var r3o9 = treso9.value.replaceAll(" ", "").toLowerCase()
+        var o9 = document.getElementById('treso9')
+        var r3r10 = tresr10.value.replaceAll(" ", "").toLowerCase()
+        var r10 = document.getElementById('tresr10')
+        var r3e11 = trese11.value.replaceAll(" ", "").toLowerCase()
+        var e11 = document.getElementById('trese11')
+        var r3s12 = tress12.value.replaceAll(" ", "").toLowerCase()
+        var s12 = document.getElementById('tress12')
+
+        if (r3r1 != 'r' || r3e2 != 'e' || r3g3 != 'g' || r3i4 != 'i' || r3s5 != 's' || r3t6 != 't' || r3r7 != 'r' || r3d8 != 'd' || r3o9 != 'o' || r3r10 != 'r' || r3e11 != 'e' || r3s12 != 's') {
+
+            r1.className = "caixas nFunfa"
+            e2.className = "caixas nFunfa"
+            g3.className = "caixas nFunfa"
+            i4.className = "caixas nFunfa"
+            s5.className = "caixas nFunfa"
+            t6.className = "caixas nFunfa"
+            r7.className = "caixas nFunfa"
+            d8.className = "caixas nFunfa"
+            o9.className = "caixas nFunfa"
+            r10.className = "caixas nFunfa"
+            e11.className = "caixas nFunfa"
+            s12.className = "caixas nFunfa"
+        }
+
+        else {
+            r1.className = "caixas funfa"
+            e2.className = "caixas funfa"
+            g3.className = "caixas funfa"
+            i4.className = "caixas funfa"
+            s5.className = "caixas funfa"
+            t6.className = "caixas funfa"
+            r7.className = "caixas funfa"
+            d8.className = "caixas funfa"
+            o9.className = "caixas funfa"
+            r10.className = "caixas funfa"
+            e11.className = "caixas funfa"
+            s12.className = "caixas funfa"
+        }
+
+
+
 
         // pergunta 6
         var r6e1 = sixe1.value.replaceAll(" ", "").toLowerCase()
@@ -529,75 +591,21 @@
         }
 
 
-        // pergunta 3
 
-        var r3r1 = tresr1.value.replaceAll(" ", "").toLowerCase()
-        var r1 = document.getElementById('tresr1')
-        var r3e2 = trese2.value.replaceAll(" ", "").toLowerCase()
-        var e2 = document.getElementById('trese2')
-        var r3g3 = tresg3.value.replaceAll(" ", "").toLowerCase()
-        var g3 = document.getElementById('tresg3')
-        var r3i4 = tresi4.value.replaceAll(" ", "").toLowerCase()
-        var i4 = document.getElementById('tresi4')
-        var r3s5 = tress5.value.replaceAll(" ", "").toLowerCase()
-        var s5 = document.getElementById('tress5')
-        var r3t6 = trest6.value.replaceAll(" ", "").toLowerCase()
-        var t6 = document.getElementById('trest6')
-        var r3r7 = tresr7.value.replaceAll(" ", "").toLowerCase()
-        var r7 = document.getElementById('tresr7')
-        var r3d8 = tresd8.value.replaceAll(" ", "").toLowerCase()
-        var d8 = document.getElementById('tresd8')
-        var r3o9 = treso9.value.replaceAll(" ", "").toLowerCase()
-        var o9 = document.getElementById('treso9')
-        var r3r10 = tresr10.value.replaceAll(" ", "").toLowerCase()
-        var r10 = document.getElementById('tresr10')
-        var r3e11 = trese11.value.replaceAll(" ", "").toLowerCase()
-        var e11 = document.getElementById('trese11')
-        var r3s12 = tress12.value.replaceAll(" ", "").toLowerCase()
-        var s12 = document.getElementById('tress12')
-
-        if (r3r1 != 'r' || r3e2 != 'e' || r3g3 != 'g' || r3i4 != 'i' || r3s5 != 's' || r3t6 != 't' || r3r7 != 'r' || r3d8 != 'd' || r3o9 != 'o' || r3r10 != 'r' || r3e11 != 'e' || r3s12 != 's') {
-
-            r1.className = "caixas nFunfa"
-            e2.className = "caixas nFunfa"
-            g3.className = "caixas nFunfa"
-            i4.className = "caixas nFunfa"
-            s5.className = "caixas nFunfa"
-            t6.className = "caixas nFunfa"
-            r7.className = "caixas nFunfa"
-            d8.className = "caixas nFunfa"
-            o9.className = "caixas nFunfa"
-            r10.className = "caixas nFunfa"
-            e11.className = "caixas nFunfa"
-            s12.className = "caixas nFunfa"
-        }
-
-        else {
-            r1.className = "caixas funfa"
-            e2.className = "caixas funfa"
-            g3.className = "caixas funfa"
-            i4.className = "caixas funfa"
-            s5.className = "caixas funfa"
-            t6.className = "caixas funfa"
-            r7.className = "caixas funfa"
-            d8.className = "caixas funfa"
-            o9.className = "caixas funfa"
-            r10.className = "caixas funfa"
-            e11.className = "caixas funfa"
-            s12.className = "caixas funfa"
-        }
 
 
         // pergunta 12
 
-        var r18c1 = dozea1.value.replaceAll(" ", "").toLowerCase()
-        var c1 = document.getElementById('dozea1')
-        var r18c2 = dozea3.value.replaceAll(" ", "").toLowerCase()
-        var c2 = document.getElementById('dozea3')
-        var r18h3 = dozeu4.value.replaceAll(" ", "").toLowerCase()
-        var h3 = document.getElementById('dozeu4')
-        var r18c4 = dozes5.value.replaceAll(" ", "").toLowerCase()
-        var e4 = document.getElementById('dozes5')
+        var r12a1 = dozea1.value.replaceAll(" ", "").toLowerCase()
+        var a1 = document.getElementById('dozea1')
+        var r12t2 = dozet2.value.replaceAll(" ", "").toLowerCase()
+        var t2 = document.getElementById('dozet2')
+        var r12a3 = dozea3.value.replaceAll(" ", "").toLowerCase()
+        var a3 = document.getElementById('dozea3')
+        var r12u4 = dozeu4.value.replaceAll(" ", "").toLowerCase()
+        var u4 = document.getElementById('dozeu4')
+        var r12s5 = dozes5.value.replaceAll(" ", "").toLowerCase()
+        var s5 = document.getElementById('dozes5')
 
 
         if (r12a1 != 'a' || r12t2 != 't' || r12a3 != 'a' || r12u4 != 'u' || r12s5 != 's') {
@@ -654,36 +662,6 @@
             console.log('foi')
         }
 
-        // pergunta 18
-
-        var r12a1 = dozea1.value.replaceAll(" ", "").toLowerCase()
-        var a1 = document.getElementById('dozea1')
-        var r12t2 = dozet2.value.replaceAll(" ", "").toLowerCase()
-        var t2 = document.getElementById('dozet2')
-        var r12a3 = dozea3.value.replaceAll(" ", "").toLowerCase()
-        var a3 = document.getElementById('dozea3')
-        var r12u4 = dozeu4.value.replaceAll(" ", "").toLowerCase()
-        var u4 = document.getElementById('dozeu4')
-        var r12s5 = dozes5.value.replaceAll(" ", "").toLowerCase()
-        var s5 = document.getElementById('dozes5')
-
-
-        if (r12a1 != 'a' || r12t2 != 't' || r12a3 != 'a' || r12u4 != 'u' || r12s5 != 's') {
-
-            a1.className = "caixas nFunfa"
-            t2.className = "caixas nFunfa"
-            a3.className = "caixas nFunfa"
-            u4.className = "caixas nFunfa"
-            s5.className = "caixas nFunfa"
-        }
-
-        else {
-            a1.className = "caixas funfa"
-            t2.className = "caixas funfa"
-            a3.className = "caixas funfa"
-            u4.className = "caixas funfa"
-            s5.className = "caixas funfa"
-        }
 
     }
 
